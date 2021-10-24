@@ -21,15 +21,23 @@
  }
 
  .btn {
-     background-color: darkgray;
+     background-color: rgb(49, 47, 47);
      width: 8rem;
      height: 1.5rem;
-     border-color:white;
+     border-color:rgb(179, 173, 173);
+     color:rgb(121, 121, 121);
      border-radius: 10px;
+     animation: fadeIn linear 2s;
+     transition: width 1.5s, height 3s;
+     -webkit-animation: fadeIn linear 2s;
+     -moz-animation: fadeIn linear 2s;
+     -o-animation: fadeIn linear 2s;
+     -ms-animation: fadeIn linear 2s;
    
  }
  .btn:hover {
      cursor: pointer;
+     
  }
 
  
