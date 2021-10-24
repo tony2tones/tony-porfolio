@@ -1,0 +1,59 @@
+.container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+    margin: 10rem auto;
+}
+
+.name h1 {
+    font-size:xxx-large;
+    color: darkgrey;
+    animation: fadeIn linear 7s;
+    -webkit-animation: fadeIn linear 7s;
+    -moz-animation: fadeIn linear 7s;
+    -o-animation: fadeIn linear 7s;
+    -ms-animation: fadeIn linear 7s;
+ }
+
+ .btn {
+     background-color: darkgray;
+     width: 8rem;
+     height: 1.5rem;
+     border-color:white;
+     border-radius: 10px;
+   
+ }
+ .btn:hover {
+     cursor: pointer;
+ }
+
+ 
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
