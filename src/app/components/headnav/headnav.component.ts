@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-headnav',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./headnav.component.css']
 })
 export class HeadnavComponent implements OnInit {
+  title = 'tony-portfolio';
+  public showToggle = false;
+  constructor(private activated: ActivatedRoute){}
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit() {
+    this.activated.params.subscribe((param: any) => {
+      console.log(param);
+      if(param === {}) {
+      this.showToggle = !this.showToggle;
+      }
+    })
   }
-
 }
