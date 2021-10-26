@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,13 +9,17 @@ import { ActivatedRoute } from '@angular/router';
 export class AppComponent implements OnInit {
   title = 'tony-portfolio';
   public showToggle = false;
-  constructor(private activated: ActivatedRoute){}
+  constructor(private router: Router){}
 
   ngOnInit() {
-    this.activated.params.subscribe((param: any) => {
-      console.log(param);
-      this.showToggle = !this.showToggle;
-      
-    })
+    // this.activated.params.subscribe((param: any) => {
+    //   console.log(param);
+    //   this.showToggle = !this.showToggle
+
+  }
+
+  hasRoute(route:string) {
+    console.log('the route ', route);
+    return this.router.url.includes(route);
   }
 }

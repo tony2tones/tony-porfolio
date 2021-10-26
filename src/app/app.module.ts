@@ -10,7 +10,7 @@ import { MainComponent } from './pages/main/main.component';
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'main', component: MainComponent , children: [
     { path: 'techstack', component: TechstackComponent }
 
