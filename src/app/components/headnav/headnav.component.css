@@ -1,9 +1,38 @@
 .navbar{
     height: 3rem;
-    background-color: green;
     padding: 20px;
 }
 
 .list {
+    border-bottom: 2px solid grey;
+   
+}
+
+ul {
     display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: center;
+}
+
+li{
+    text-align: center;
+    line-height: 1.5;
+    list-style-type: none;  
+    margin: 0 2vw;
+    /* our font-size will be 3% of the height of the viewport */
+    font-size: 3vh;
+  }
+
+  
+ .btn {
+    background-color: rgb(49, 47, 47);
+    width: 8rem;
+    border-color:rgb(179, 173, 173);
+    color:rgb(121, 121, 121);
+    border-radius: 10px;
+}
+.btn:hover {
+    cursor: pointer;
+    color: rgb(179, 173, 173);
 }

@@ -7,12 +7,15 @@ import { HomeComponent } from './pages/landing/home.component';
 import { TechstackComponent } from './pages/techstack/techstack.component';
 import { HeadnavComponent } from './components/headnav/headnav.component';
 import { MainComponent } from './pages/main/main.component';
+import { WorkComponent } from './pages/work/work.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'main', component: MainComponent , children: [
-    { path: 'techstack', component: TechstackComponent }
+    { path: 'main/techstack', component: TechstackComponent },
+    { path: 'work', component: WorkComponent }
 
   ]},
 ];
@@ -23,7 +26,9 @@ const routes: Routes = [
     HomeComponent,
     TechstackComponent,
     HeadnavComponent,
-    MainComponent
+    MainComponent,
+    WorkComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
