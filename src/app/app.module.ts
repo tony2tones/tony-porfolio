@@ -12,12 +12,10 @@ import { ProfileComponent } from './pages/profile/profile.component';
 
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'main', component: MainComponent , children: [
-    { path: 'main/techstack', component: TechstackComponent },
-    { path: 'work', component: WorkComponent }
-
-  ]},
+  {  path: 'home', component: HomeComponent },
+  { path: '', redirectTo: '/home' , pathMatch:'full'},
+  {  path: 'work', component: WorkComponent },
+  {  path: 'techstack', component: TechstackComponent }
 ];
 
 @NgModule({

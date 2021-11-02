@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   }
 
   mainNav() {
-    this.router.navigate(['/main/work']);
+    this.router.navigate(['/work']);
   }
 
 
