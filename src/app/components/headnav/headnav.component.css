@@ -5,21 +5,18 @@
 
 .list {
     border-bottom: 2px solid grey;
-   
-}
-
-ul {
     display: flex;
     flex-direction: row;
     margin: 10px;
     justify-content: center;
 }
 
-li{
+button{
     text-align: center;
     line-height: 1.5;
     list-style-type: none;  
     margin: 0 2vw;
+    margin:10px;
     /* our font-size will be 3% of the height of the viewport */
     font-size: 3vh;
   }
