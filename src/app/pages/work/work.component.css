@@ -1,0 +1,13 @@
+.container {
+    margin:5%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.project {
+    
+    border:2px solid white;
+    height: 200px;
+    width: 200px;
+}
