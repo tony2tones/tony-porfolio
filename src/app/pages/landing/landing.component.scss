@@ -1,85 +1,86 @@
-@keyframes slideleft {
-  from {
-    background-position: 0 0;
-  }
-/*use negative width if you want it to flow right to left else and positive for left to right*/
-  to {
-    background-position: 0 -10000px;
-  }
-}
+@import "/src/sass/pages/landing";
+// @keyframes slideleft {
+//   from {
+//     background-position: 0 0;
+//   }
+// /*use negative width if you want it to flow right to left else and positive for left to right*/
+//   to {
+//     background-position: 0 -10000px;
+//   }
+// }
 
-.container {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   width: auto;
-   height: 100vh;
-   background-image: url('../../../assets/images/pexels-arın-turkay-2591408.jpg');
-   background-repeat: repeat-y;
-   animation: slideleft 1800s infinite linear;
-   background-size: cover;
-   overflow: hidden;
-}
+// .container {
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: center;
+//    width: auto;
+//    height: 100vh;
+//    background-image: url('../../../assets/images/pexels-arın-turkay-2591408.jpg');
+//    background-repeat: repeat-y;
+//    animation: slideleft 1800s infinite linear;
+//    background-size: cover;
+//    overflow: hidden;
+// }
 
-.content {
-    width: 100%;
-    text-align: center;
-    margin: 10rem auto;
-}
+// .content {
+//     width: 100%;
+//     text-align: center;
+//     margin: 10rem auto;
+// }
 
-.name h1 {
-    font-size:xxx-large;
-    color: darkgrey;
-    animation: fadeIn linear 7s;
-    -webkit-animation: fadeIn linear 7s;
-    -moz-animation: fadeIn linear 7s;
-    -o-animation: fadeIn linear 7s;
-    -ms-animation: fadeIn linear 7s;
- }
+// .name h1 {
+//     font-size:xxx-large;
+//     color: darkgrey;
+//     animation: fadeIn linear 7s;
+//     -webkit-animation: fadeIn linear 7s;
+//     -moz-animation: fadeIn linear 7s;
+//     -o-animation: fadeIn linear 7s;
+//     -ms-animation: fadeIn linear 7s;
+//  }
 
- .btn {
-   margin:20px;
-     background-color: rgb(49, 47, 47);
-     width: 8rem;
-     height: 1.5rem;
-     border-color:rgb(179, 173, 173);
-     color:rgb(121, 121, 121);
-     border-radius: 10px;
-     animation: fadeIn linear 2s;
-     transition: width 1.5s, height 3s;
-     -webkit-animation: fadeIn linear 2s;
-     -moz-animation: fadeIn linear 2s;
-     -o-animation: fadeIn linear 2s;
-     -ms-animation: fadeIn linear 2s;
+//  .btn {
+//    margin:20px;
+//      background-color: rgb(49, 47, 47);
+//      width: 8rem;
+//      height: 1.5rem;
+//      border-color:rgb(179, 173, 173);
+//      color:rgb(121, 121, 121);
+//      border-radius: 10px;
+//      animation: fadeIn linear 2s;
+//      transition: width 1.5s, height 3s;
+//      -webkit-animation: fadeIn linear 2s;
+//      -moz-animation: fadeIn linear 2s;
+//      -o-animation: fadeIn linear 2s;
+//      -ms-animation: fadeIn linear 2s;
    
- }
- .btn:hover {
-     cursor: pointer;
-     color: rgb(179, 173, 173);
- }
+//  }
+//  .btn:hover {
+//      cursor: pointer;
+//      color: rgb(179, 173, 173);
+//  }
 
  
-@keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
+// @keyframes fadeIn {
+//     0% {opacity:0;}
+//     100% {opacity:1;}
+//   }
   
-  @-moz-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
+//   @-moz-keyframes fadeIn {
+//     0% {opacity:0;}
+//     100% {opacity:1;}
+//   }
   
-  @-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
+//   @-webkit-keyframes fadeIn {
+//     0% {opacity:0;}
+//     100% {opacity:1;}
+//   }
   
-  @-o-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
+//   @-o-keyframes fadeIn {
+//     0% {opacity:0;}
+//     100% {opacity:1;}
+//   }
   
-  @-ms-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
+//   @-ms-keyframes fadeIn {
+//     0% {opacity:0;}
+//     100% {opacity:1;}
+//   }
