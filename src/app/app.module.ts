@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './pages/landing/home.component';
+import { Landingomponent } from './pages/landing/landing.component';
 import { TechstackComponent } from './pages/techstack/techstack.component';
 import { HeadnavComponent } from './components/headnav/headnav.component';
 import { MainComponent } from './pages/main/main.component';
@@ -12,7 +12,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 
 
 const routes: Routes = [
-  {  path: 'home', component: HomeComponent },
+  {  path: 'home', component: Landingomponent },
   { path: '', redirectTo: '/home' , pathMatch:'full'},
   {  path: 'work', component: WorkComponent },
   {  path: 'techstack', component: TechstackComponent },
@@ -22,7 +22,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    Landingomponent,
     TechstackComponent,
     HeadnavComponent,
     MainComponent,
