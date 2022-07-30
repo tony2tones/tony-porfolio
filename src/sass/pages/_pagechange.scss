@@ -1,0 +1,22 @@
+@keyframes slideleft {
+    from {
+      background-position: 0;
+    }
+  /*use negative width if you want it to flow right to left else and positive for left to right*/
+    to {
+      background-position: -10000px ;
+    }
+  }
+  
+  .container {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: auto;
+     height: 100vh;
+     background-image: url('../../assets/images/pexels-rudolf-jakkel-forrest-min.jpg');
+     background-repeat: repeat-x;
+     animation: slideleft 30s infinite linear;
+     background-size: cover;
+     overflow: hidden;
+  }

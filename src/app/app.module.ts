@@ -9,6 +9,7 @@ import { HeadnavComponent } from './components/headnav/headnav.component';
 import { MainComponent } from './pages/main/main.component';
 import { WorkComponent } from './pages/work/work.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { ChangePageComponent } from './components/change-page/change-page.component';
 
 
 const routes: Routes = [
@@ -27,7 +28,8 @@ const routes: Routes = [
     HeadnavComponent,
     MainComponent,
     WorkComponent,
-    ProfileComponent
+    ProfileComponent,
+    ChangePageComponent
   ],
   imports: [
     BrowserModule,
