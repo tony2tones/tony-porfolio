@@ -11,7 +11,6 @@
   .container {
      display: flex;
      flex-direction: column;
-     justify-content: center;
      width: auto;
      height: 100vh;
      background-image: url('../../assets/images/pexels-arın-turkay-2591408.jpg');
@@ -22,9 +21,18 @@
   }
   
   .content {
-      width: 100%;
-      text-align: center;
-      margin: 10rem auto;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      font-size: 25px;
+      color: #fff;
+    }
+    
+    .content.borderAnimation {
+      border:solid 4px #fff;
+      
   }
   
   .name h1 {
