@@ -14,7 +14,7 @@ $border-color: yellow;
 }
 
 .border-animation:before{
-    animation: animate 1s linear forwards;
+    animation: animate 2s linear forwards;
 
 }
 
@@ -58,8 +58,7 @@ $border-color: yellow;
 }
 
 .border-animation:after{
-    animation: animate2 1s linear forwards;
-    animation-delay: 1s;
+    animation: animate2 2s linear forwards;
 
 }
 
