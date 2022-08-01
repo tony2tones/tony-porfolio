@@ -1,12 +1,19 @@
-<div class="container">
-    <div class="content">
-        <div class="name">
-            <h1>Anthony Marques</h1>
-        </div>
-
-        <button class="btn" (click)="mainNav()">enter</button>
-
+<div *ngIf="hideBtn" class="container">
+  <div class="content">
+    <div class="border-animation">
+      <h1>Anthony Marques</h1>
     </div>
-    
-    <h3>You are very patient...</h3>
+  </div>
+
+  <div class="center-btn">
+    <button class="btn" (click)="mainNav()">enter</button>
+  </div>
+  <!-- <a href="https://www.instagram.com/arinturkayy/" -->
+    <!-- > -->
+    <!-- <h3>Image by arin turkayy</h3></a -->
+  <!-- > -->
+  <!-- <div class="border-animation"> TET TEST TSET STEST ETS</div> -->
+</div>
+<div *ngIf="!hideBtn">
+  <app-change-page></app-change-page>
 </div>
