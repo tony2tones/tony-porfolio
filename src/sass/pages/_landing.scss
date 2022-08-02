@@ -39,7 +39,6 @@
 .btn-landing {
   position: relative;
   display: block;
-  color: white;
   font-size: 20px;
   background-color: transparent;
   text-decoration: none;
@@ -47,11 +46,12 @@
   border: 2px solid #fff;
   padding: 14px 60px;
   text-transform: uppercase;
+  color: white;
   overflow: hidden;
   transition: 1s all ease;
 }
 .btn-landing::before {
-  background: #ff7675;
+  background: #fff;
   content: "";
   position: absolute;
   top: 50%;
@@ -59,6 +59,8 @@
   transform: translate(-50%,-50%);
   z-index: -1;
   transition: all 0.6s ease;
+  color: black;
+
 }
 
 .btn-landing::before {
@@ -67,6 +69,13 @@
 }
 .btn-landing:hover::before {
   height: 100%;
+  color: black;
+  cursor: pointer;
+}
+
+.btn-landing:hover {
+  color: black;
+  cursor: pointer;
 }
 
 .content.borderAnimation {
@@ -83,25 +92,25 @@
   -ms-animation: fadeIn linear 7s;
 }
 
-.btn {
-  margin: 20px;
-  background-color: rgb(49, 47, 47);
-  width: 8rem;
-  height: 1.5rem;
-  border-color: rgb(179, 173, 173);
-  color: rgb(121, 121, 121);
-  border-radius: 10px;
-  animation: fadeIn linear 2s;
-  transition: width 1.5s, height 3s;
-  -webkit-animation: fadeIn linear 2s;
-  -moz-animation: fadeIn linear 2s;
-  -o-animation: fadeIn linear 2s;
-  -ms-animation: fadeIn linear 2s;
-}
-.btn:hover {
-  cursor: pointer;
-  color: rgb(179, 173, 173);
-}
+// .btn {
+//   margin: 20px;
+//   background-color: rgb(49, 47, 47);
+//   width: 8rem;
+//   height: 1.5rem;
+//   border-color: rgb(179, 173, 173);
+//   color: rgb(121, 121, 121);
+//   border-radius: 10px;
+//   animation: fadeIn linear 2s;
+//   transition: width 1.5s, height 3s;
+//   -webkit-animation: fadeIn linear 2s;
+//   -moz-animation: fadeIn linear 2s;
+//   -o-animation: fadeIn linear 2s;
+//   -ms-animation: fadeIn linear 2s;
+// }
+// .btn:hover {
+//   cursor: pointer;
+//   color: rgb(179, 173, 173);
+// }
 
 @keyframes fadeIn {
   0% {
