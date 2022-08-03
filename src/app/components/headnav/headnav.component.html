@@ -1,6 +1,10 @@
-<div class="navbar">
-    <div class="list">
-        <button class="btn" routerLink="work"><a>work</a></button>
-        <button class="btn" (click)="profile()"><a>profile</a></button>
-    </div>
-</div>
+<nav class="navBar">
+    <ul>
+      <li [routerLink]='["/"]' [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active"><a>Home</a>
+      </li>
+      <li [routerLink]='["work"]' routerLinkActive="active"><a>Work</a></li>
+      <li [routerLink]='["techstack"]' routerLinkActive="active" ><a>Tech stack</a></li>
+      <li [routerLink]='["about"]' routerLinkActive="active" ><a>About</a></li>
+    </ul>
+  </nav>
+  <hr />

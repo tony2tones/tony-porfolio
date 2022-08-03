@@ -1,4 +1,4 @@
-<div *ngIf="hideBtn" class="container">
+<div class="container" ngClass="'test' : !hideBtn">
   <div class="content">
     <div class="border-animation">
       <h1>Anthony Marques</h1>
@@ -6,7 +6,7 @@
   </div>
 
   <div class="center-btn">
-    <button class="btn" (click)="mainNav()">enter</button>
+    <button class="btn-landing" (click)="mainNav()">enter</button>
   </div>
   <!-- <a href="https://www.instagram.com/arinturkayy/" -->
     <!-- > -->
@@ -14,6 +14,4 @@
   <!-- > -->
   <!-- <div class="border-animation"> TET TEST TSET STEST ETS</div> -->
 </div>
-<div *ngIf="!hideBtn">
-  <app-change-page></app-change-page>
-</div>
+

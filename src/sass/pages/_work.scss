@@ -1,0 +1,27 @@
+
+.container-work {
+  padding-top: 20px;
+  margin-top: -105px;
+  height: 100vh;
+  background-image: url("../../assets/images/filip-zrnzevic-unsplash-min.jpg");
+  background-size: cover;
+  background-position: 0 75%;
+  overflow: auto;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  margin-top: 20rem;
+  margin-right: 3rem;
+  border: 2px solid white;
+}
+
+.project img {
+  max-height: 400px;
+  max-width: 400px;
+}

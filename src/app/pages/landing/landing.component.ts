@@ -7,18 +7,18 @@ import { Router } from '@angular/router';
   styleUrls: ['./landing.component.scss']
 })
 export class Landingomponent implements OnInit {
-  public hideBtn = true;
+  // public hideBtn = true;
   constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
   mainNav() {
-    this.hideBtn = false;
-    setTimeout(() => {
+    // this.hideBtn = false;
+    this.router.navigate(['/work']);
+    // setTimeout(() => {
       
-      this.router.navigate(['/work']);
-    }, 3000);
+    // }, 3000);
   }
 
 
