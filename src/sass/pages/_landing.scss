@@ -9,11 +9,8 @@
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  width: auto;
   height: 100vh;
-  background-image: url("../../assets/images/pexels-arın-turkay-2591408.jpg");
+  background-image: url("../../assets/images/pexels-arın-turkay-2591408-min.jpg");
   background-repeat: repeat-y;
   animation: slideTopDown 1800s infinite linear;
   background-size: cover;
@@ -27,7 +24,6 @@
   transform: translate(-50%, -50%);
   padding: 60px;
   font-size: 25px;
-  color: rgb(230, 231, 231);
 }
 .center-btn {
   position: absolute;
@@ -84,7 +80,7 @@
 
 .border-animation h1 {
   font-size: xxx-large;
-  color: darkgrey;
+  color: #fff;
   animation: fadeIn linear 3s;
   -webkit-animation: fadeIn linear 7s;
   -moz-animation: fadeIn linear 7s;
