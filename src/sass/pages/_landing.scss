@@ -8,6 +8,11 @@
   }
 }
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .container {
   height: 100vh;
   background-image: url("../../assets/images/pexels-arın-turkay-2591408-min.jpg");
@@ -87,26 +92,6 @@
   -o-animation: fadeIn linear 7s;
   -ms-animation: fadeIn linear 7s;
 }
-
-// .btn {
-//   margin: 20px;
-//   background-color: rgb(49, 47, 47);
-//   width: 8rem;
-//   height: 1.5rem;
-//   border-color: rgb(179, 173, 173);
-//   color: rgb(121, 121, 121);
-//   border-radius: 10px;
-//   animation: fadeIn linear 2s;
-//   transition: width 1.5s, height 3s;
-//   -webkit-animation: fadeIn linear 2s;
-//   -moz-animation: fadeIn linear 2s;
-//   -o-animation: fadeIn linear 2s;
-//   -ms-animation: fadeIn linear 2s;
-// }
-// .btn:hover {
-//   cursor: pointer;
-//   color: rgb(179, 173, 173);
-// }
 
 @keyframes fadeIn {
   0% {
