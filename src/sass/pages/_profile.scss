@@ -1,0 +1,18 @@
+.profile-container {
+  display: flex;
+  margin: 20% auto;
+  justify-content: space-evenly;
+}
+
+.profile-card {
+  border: 2px solid white;
+  flex-direction: column;
+  width: 73ch;
+  padding: 3rem;
+}
+
+.bio-card {
+  border: 2px solid white;
+  width: 73ch;
+  padding: 3rem;
+}

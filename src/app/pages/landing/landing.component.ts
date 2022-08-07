@@ -15,7 +15,7 @@ export class Landingomponent implements OnInit {
 
   mainNav() {
     // this.hideBtn = false;
-    this.router.navigate(['/work']);
+    this.router.navigate(['/profile']);
     // setTimeout(() => {
       
     // }, 3000);
