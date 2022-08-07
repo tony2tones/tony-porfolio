@@ -1,0 +1,26 @@
+
+.navBar {
+    position: relative;
+    top: 20px;
+    opacity: 1;
+  }
+  .navBar ul {
+    display: flex;
+  }
+  .navBar ul li {
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.7s all;
+    padding: 2rem;
+    font-size: medium;
+  }
+  .navBar ul li:hover {
+    background-color: #088;
+    color:black;
+    cursor: pointer;
+  }
+  .navBar ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
