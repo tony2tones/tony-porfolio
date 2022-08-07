@@ -1,12 +1,18 @@
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
 .container-work {
-  padding-top: 20px;
+  padding: 20px;
   margin-top: -105px;
   height: 100vh;
   background-image: url("../../assets/images/filip-zrnzevic-unsplash-min.jpg");
   background-size: cover;
   background-position: 0 75%;
   overflow: auto;
+  animation:fadeIn 3s;
+  
 }
 
 .project-list {
@@ -16,8 +22,8 @@
 }
 
 .project {
-  margin-top: 20rem;
-  margin-right: 3rem;
+  margin-top: 13rem;
+  margin-right: 5rem;
   border: 2px solid white;
 }
 

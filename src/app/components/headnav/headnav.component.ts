@@ -15,5 +15,9 @@ export class HeadnavComponent {
     this.router.navigate(['/profile']);
   }
 
+  myScroll() {
+    console.log('SOMETHING HAPPENED');
+  }
+
 
 }
