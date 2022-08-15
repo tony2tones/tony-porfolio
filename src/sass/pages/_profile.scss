@@ -1,0 +1,26 @@
+.profile-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.profile-card {
+  border: 2px solid white;
+  flex-direction: column;
+  width: 73ch;
+  padding: 3rem;
+  margin: 4rem;
+}
+
+.profile-image img{
+  width: 400px;
+}
+
+.bio-card {
+  border: 2px solid white;
+  word-wrap: break-word;
+  color: aliceblue;
+  width: 73ch;
+  padding: 3rem;
+  font-size: 3rem;
+  margin: 4rem;
+}
