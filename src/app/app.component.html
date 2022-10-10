@@ -1,12 +1,12 @@
 <div class="container-g">
   <div *ngIf="!hideLanging">
-    <section class="one">
+    <section class="landing-background">
       <app-headnav *ngIf="!hasRoute('home')"></app-headnav>
       <app-landing-page (buttonPressed)="uiUpdate($event)"></app-landing-page>
     </section>
   </div>
   <div *ngIf="hideLanging">
-    <section>
+    <section class="landing-background">
       <app-profile></app-profile>
     </section>
     <section class="two">
