@@ -9,6 +9,7 @@ import {  Router } from '@angular/router';
 export class AppComponent implements OnInit {
   title = 'tony-portfolio';
   public showToggle = false;
+  public hideLanging = false;
   constructor(private router: Router){}
 
   ngOnInit() {
@@ -20,6 +21,10 @@ export class AppComponent implements OnInit {
 
   hasRoute(route:string) {
     return this.router.url.includes(route);
+  }
+
+  uiUpdate($event:boolean) {
+    this.hideLanging = $event;
   }
 
 }

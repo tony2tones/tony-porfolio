@@ -1,4 +1,19 @@
-<section>
-  <app-headnav *ngIf="!hasRoute('home')"></app-headnav>
-  <router-outlet></router-outlet>
-</section>
+<div class="container-g">
+  <div *ngIf="!hideLanging">
+    <section class="one">
+      <app-headnav *ngIf="!hasRoute('home')"></app-headnav>
+      <app-landing-page (buttonPressed)="uiUpdate($event)"></app-landing-page>
+    </section>
+  </div>
+  <div *ngIf="hideLanging">
+    <section>
+      <app-profile></app-profile>
+    </section>
+    <section class="two">
+      <app-techstack></app-techstack>
+    </section>
+    <section class="three">
+      <app-work></app-work>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+@import "/src/sass/pages/landing";
+@import "/src/sass/base/animations";
+
+.container-g {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+
