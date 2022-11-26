@@ -46,6 +46,7 @@
 
     &__content {
       position: absolute;
+      display: contents;
       top: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -59,7 +60,6 @@
         -moz-animation: fadeIn linear 7s;
         -o-animation: fadeIn linear 7s;
         -ms-animation: fadeIn linear 7s;
-        border: solid 4px #fff;
       }
     }
   }
