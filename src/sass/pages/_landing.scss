@@ -9,8 +9,12 @@
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 // .container {
@@ -22,15 +26,83 @@
 //   background-size: cover;
 //   overflow: hidden;
 // }
+.landing {
+  &__background {
+    background-attachment: fixed;
+    height: 100vh;
+    background-image: url("../../assets/images/pexels-arın-turkay-2591408-min.jpg");
+    background-repeat: repeat-y;
+    animation: slideTopDown 1800s infinite linear;
+    background-size: cover;
+    overflow: hidden;
+  }
+  &__container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    font-size: 25px;
 
-.landing-background {
-  background-attachment: fixed;
-  height: 100vh;
-  background-image: url("../../assets/images/pexels-arın-turkay-2591408-min.jpg");
-  background-repeat: repeat-y;
-  animation: slideTopDown 1800s infinite linear;
-  background-size: cover;
-  overflow: hidden;
+    &__content {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 60px;
+      font-size: 25px;
+      &__border__animation h1 {
+        font-size: xxx-large;
+        color: #fff;
+        animation: fadeIn linear 3s;
+        -webkit-animation: fadeIn linear 7s;
+        -moz-animation: fadeIn linear 7s;
+        -o-animation: fadeIn linear 7s;
+        -ms-animation: fadeIn linear 7s;
+        border: solid 4px #fff;
+      }
+    }
+  }
+  &__center__btn {
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__btn {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    background-color: transparent;
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid #fff;
+    padding: 14px 60px;
+    text-transform: uppercase;
+    color: white;
+    overflow: hidden;
+    transition: 1s all ease;
+}
+&.__btn::before {
+  background: #fff;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+  color: black;
+}
+&.__btn::before {
+  width: 100%;
+  height: 0%;
+}
+&.__btn:hover::before {
+  height: 100%;
+  color: black;
+  cursor: pointer;
+}
 }
 
 .content {
@@ -68,11 +140,10 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   z-index: -1;
   transition: all 0.6s ease;
   color: black;
-
 }
 
 .btn-landing::before {
@@ -89,7 +160,7 @@
   color: black;
   cursor: pointer;
 }
-
+// landing__container__content__border-animation
 .content.borderAnimation {
   border: solid 4px #fff;
 }

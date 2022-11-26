@@ -25,6 +25,7 @@ export class AppComponent implements OnInit {
 
   uiUpdate($event:boolean) {
     this.hideLanging = $event;
+    this.router.navigateByUrl('/profile');
   }
 
 }

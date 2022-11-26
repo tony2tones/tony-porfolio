@@ -1,19 +1,10 @@
 <div class="container-g">
   <div *ngIf="!hideLanging">
-    <section class="landing-background">
-      <app-headnav *ngIf="!hasRoute('home')"></app-headnav>
+    <section class="landing__background">
       <app-landing-page (buttonPressed)="uiUpdate($event)"></app-landing-page>
     </section>
   </div>
   <div *ngIf="hideLanging">
-    <section class="landing-background">
-      <app-profile></app-profile>
-    </section>
-    <section class="two">
-      <app-techstack></app-techstack>
-    </section>
-    <section class="three">
-      <app-work></app-work>
-    </section>
+    <router-outlet></router-outlet>
   </div>
 </div>
