@@ -9,31 +9,25 @@ import { HeadnavComponent } from './components/headnav/headnav.component';
 import { MainComponent } from './pages/main/main.component';
 import { WorkComponent } from './pages/work/work.component';
 import { ProfileComponent } from './pages/profile/profile.component';
-import { ChangePageComponent } from './components/change-page/change-page.component';
+import { ProfileModule } from './pages/profile/profile.module';
 
 
 const routes: Routes = [
   {  path: 'home', component: Landingomponent },
   { path: '', redirectTo: '/home' , pathMatch:'full'},
-  {  path: 'work', component: WorkComponent },
-  {  path: 'techstack', component: TechstackComponent },
-  {  path: 'about', component: ProfileComponent }
+  {  path: 'profile', component: ProfileComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     Landingomponent,
-    TechstackComponent,
-    HeadnavComponent,
-    MainComponent,
-    WorkComponent,
-    ProfileComponent,
-    ChangePageComponent
+    // ProfileModule
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    ProfileModule
   ],
   providers: [],
   bootstrap: [AppComponent]

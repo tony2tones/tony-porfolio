@@ -1,11 +1,30 @@
-<div class="profile-container">
+<div class="main-container">
+  <div class="profile-container">
     <div class="profile-card">
-        <div class="profile-image"><img src="../../../assets/images/react-weatherapp.png"/></div>
-        <div class="profile-details">
-        </div>
+      <div class="profile-image">
+        <img src="../../../assets/images/myfaceProfile3.png" />
+      </div>
     </div>
-    <div class="bio-card">
-        <h2>About</h2>
-        <p>Anthony Marques has been in the software development for over 10 years and is a self taugh FrontEnd developer.</p>
+  </div>
+  <div class="content">
+    <div class="bio-card bio-panel">
+      <h2>About</h2>
+      <p>
+        Anthony Marques has been in the software development for over 10 years
+        and is a self taugh FrontEnd developer. I do love people and helping
+        others with robust web applications whihc I have been developing in the
+        fin tech space for about 4 years now consistently.
+      </p>
     </div>
+
+    <section class="landing-background">
+      <router-outlet></router-outlet>
+    </section>
+    <section class="two">
+      <app-techstack></app-techstack>
+    </section>
+    <section class="three">
+      <app-work></app-work>
+    </section>
+  </div>
 </div>

@@ -9,89 +9,107 @@
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.container {
-  height: 100vh;
-  background-image: url("../../assets/images/pexels-arın-turkay-2591408-min.jpg");
-  background-repeat: repeat-y;
-  animation: slideTopDown 1800s infinite linear;
-  background-size: cover;
-  overflow: hidden;
-}
+// .container {
+//   background-attachment: fixed;
+//   height: 100vh;
+//   background-image: url("../../assets/images/pexels-arın-turkay-2591408-min.jpg");
+//   background-repeat: repeat-y;
+//   animation: slideTopDown 1800s infinite linear;
+//   background-size: cover;
+//   overflow: hidden;
+// }
+.landing {
+  &__background {
+    background-attachment: fixed;
+    height: 100vh;
+    background-image: url("../../assets/images/pexels-arın-turkay-2591408-min.jpg");
+    background-repeat: repeat-y;
+    animation: slideTopDown 1800s infinite linear;
+    background-size: cover;
+    overflow: hidden;
+  }
+  &__container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    font-size: 25px;
 
-.content {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 60px;
-  font-size: 25px;
+    &__content {
+      position: absolute;
+      display: contents;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 60px;
+      font-size: 25px;
+      &__border__animation h1 {
+        font-size: xxx-large;
+        color: #fff;
+        animation: fadeIn linear 3s;
+        -webkit-animation: fadeIn linear 7s;
+        -moz-animation: fadeIn linear 7s;
+        -o-animation: fadeIn linear 7s;
+        -ms-animation: fadeIn linear 7s;
+      }
+    }
+  }
+  &__center__btn {
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__btn {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    background-color: transparent;
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid #fff;
+    padding: 14px 60px;
+    text-transform: uppercase;
+    color: white;
+    overflow: hidden;
+    transition: 1s all ease;
 }
-.center-btn {
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.btn-landing {
-  position: relative;
-  display: block;
-  font-size: 20px;
-  background-color: transparent;
-  text-decoration: none;
-  margin: 30px 0;
-  border: 2px solid #fff;
-  padding: 14px 60px;
-  text-transform: uppercase;
-  color: white;
-  overflow: hidden;
-  transition: 1s all ease;
-}
-.btn-landing::before {
+&__btn::before {
   background: #fff;
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   z-index: -1;
   transition: all 0.6s ease;
   color: black;
-
 }
-
-.btn-landing::before {
+&__btn::before {
   width: 100%;
   height: 0%;
 }
-.btn-landing:hover::before {
+&__btn:hover::before {
   height: 100%;
   color: black;
   cursor: pointer;
 }
-
-.btn-landing:hover {
+&__btn:hover {
   color: black;
+  font-size: large;
   cursor: pointer;
 }
-
-.content.borderAnimation {
-  border: solid 4px #fff;
 }
 
-.border-animation h1 {
-  font-size: xxx-large;
-  color: #fff;
-  animation: fadeIn linear 3s;
-  -webkit-animation: fadeIn linear 7s;
-  -moz-animation: fadeIn linear 7s;
-  -o-animation: fadeIn linear 7s;
-  -ms-animation: fadeIn linear 7s;
-}
 
 @keyframes fadeIn {
   0% {

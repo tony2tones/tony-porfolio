@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-landing-page',
@@ -7,20 +6,21 @@ import { Router } from '@angular/router';
   styleUrls: ['./landing.component.scss']
 })
 export class Landingomponent implements OnInit {
-  // public hideBtn = true;
-  constructor(private router: Router) { }
+  public hideBtn = true;
+  @Output() buttonPressed = new EventEmitter();
+  constructor() { }
 
   ngOnInit(): void {
   }
 
   mainNav() {
-    // this.hideBtn = false;
-    this.router.navigate(['/work']);
-    // setTimeout(() => {
-      
-    // }, 3000);
+    this.buttonPressed.emit(true);
   }
 
 
 
 }
+function output() {
+  throw new Error('Function not implemented.');
+}
+

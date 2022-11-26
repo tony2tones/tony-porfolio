@@ -3,15 +3,27 @@
   100% { opacity: 1; }
 }
 
-.container-work {
-  padding: 20px;
-  margin-top: -105px;
+@keyframes slideTopDown {
+  from {
+    background-position: 0 0;
+  }
+  /*use negative width if you want it to flow right to left else and positive for left to right*/
+  to {
+    background-position:  0 -10000px;
+  }
+}
+
+.profile-background {
+  background-attachment: fixed;
   height: 100vh;
-  background-image: url("../../assets/images/filip-zrnzevic-unsplash-min.jpg");
+  background-repeat: repeat-y;
+  animation: slideTopDown 1800s infinite linear;
   background-size: cover;
-  background-position: 0 75%;
-  overflow: auto;
-  animation:fadeIn 3s;
+  overflow: hidden;
+  background-image: url("../../assets/images/filip-zrnzevic-unsplash-min.jpg");
+  
+  background-repeat: repeat-x;
+  animation: slideTopDown 1800s infinite linear;
   
 }
 
