@@ -1,50 +1,56 @@
-.main-container {
+.main__container {
   display: flex;
+  &__profile__container {
+    padding-top: 3rem;
+  }
+  &__profile__card {
+    flex-direction: column;
+    margin-top: 10rem;
+    &__profile_image {
+      background-color: azure;
+      border-radius: 10rem;
+      height: 40rem;
+      width: 400px;
+      position: relative;
+      & > img {
+        position: absolute;
+        width: 370px;
+        padding-left: 2rem;
+      }
+    }
+  }
 }
-.profile-container {
-  display: inline-block;
-  // background-size:cover;
-  // width: 50%;
-  // height: 100vh;
-  // background-image: url("../../assets/images/pexels-martinque-13820812-min.jpg");
-  // filter: brightness(70%);
-  
-}
-.content {
-  display: inline-block;
 
-  // width:50%;
-  // overflow: auto;
-}
-.bio-panel {
-}
-
-.profile-card {
+.main__container__profile__profile__card.animationProfile {
+  background-color: #55a2a2;
+;}
+.profileShrink {
   flex-direction: column;
   margin-top: 10rem;
+  &__profile_image {
+    background-color: azure;
+    border-radius: 10rem;
+    height: 40rem;
+    width: 400px;
+    position: relative;
+    & > img {
+      position: absolute;
+      width: 370px;
+      padding-left: 2rem;
+    }
+  }
 }
-
-.profile-image {
-  background-color: azure;
-  border-radius: 10rem;
-  height: 40rem;
-  width: 400px;
-  position: relative;
-}
-
-.profile-image > img{
-  // padding: 3rem;
-  // margin: 4rem;
-  position: absolute;
-  top: 0rem;
-  width: 400px;
+.content {
+  display: block;
+  height: 100vh;
+  overflow: auto;
+  width: -webkit-fill-available;
 }
 
 .bio-card {
   word-wrap: break-word;
   color: aliceblue;
-  width: 73ch;
-  padding: 3rem;
-  margin: 4rem;
+  width: 43ch;
+  margin: 5rem;
   font-size: 3rem;
 }

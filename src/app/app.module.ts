@@ -10,6 +10,7 @@ import { MainComponent } from './pages/main/main.component';
 import { WorkComponent } from './pages/work/work.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { ProfileModule } from './pages/profile/profile.module';
+import { ScrollDirective } from './directive/scroll-styles.directive';
 
 
 const routes: Routes = [
@@ -22,7 +23,7 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     Landingomponent,
-    // ProfileModule
+    ScrollDirective,
   ],
   imports: [
     BrowserModule,
