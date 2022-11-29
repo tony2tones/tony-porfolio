@@ -24,7 +24,7 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes),
   ],
-  providers: [],
+  providers: [{ provide: Window, useValue: window }],
   bootstrap: [ProfileComponent]
 })
 export class ProfileModule { }

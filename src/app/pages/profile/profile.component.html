@@ -1,18 +1,19 @@
-<div class="main-container">
-  <div class="profile-container">
-    <div class="profile-card">
-      <div class="profile-image">
+<div class="main__container">
+  <div id="profileCard" #profileCard class="main__container__profile__container">
+    <div [class.main__container__profile__profile__card]="!classtoggle"
+    [class.animatedProfile]='classtoggle'>
+      <div class="main__container__profile__card__profile_image">
         <img src="../../../assets/images/myfaceProfile3.png" />
       </div>
     </div>
   </div>
-  <div class="content">
-    <div class="bio-card bio-panel">
-      <h2>About</h2>
+  <div class="content" (scroll)="onScroll($event)">
+    <div class="bio-card">
+      <h2>I'm Anthony Marques</h2>
       <p>
-        Anthony Marques has been in the software development for over 10 years
+        Been in the software development for over 10 years
         and is a self taugh FrontEnd developer. I do love people and helping
-        others with robust web applications whihc I have been developing in the
+        others with robust web applications. I have been developing in the
         fin tech space for about 4 years now consistently.
       </p>
     </div>
