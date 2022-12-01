@@ -8,18 +8,22 @@ import { Component, ElementRef, HostListener, OnInit, Renderer2, ViewChild } fro
 })
 export class ProfileComponent implements OnInit {
   classtoggle = false;
+  doAnimation = false;
   @ViewChild('profileCard')
   elementRef!: ElementRef;
   constructor(private renderer: Renderer2, private viewporter: ViewportScroller) { }
 
   @HostListener('document:scroll', ['$event']) 
-  onScroll($event: Event) {
+  onScroll($event: any) {
 
-    let value = this.viewporter.getScrollPosition();
-    if(document.body.scrollTop > 0 || document.documentElement.scrollTop > 0 ) {
-      this.classtoggle = true;
+    if( $event.target.scrollTop >= 110 ) {
+      console.log('DO ANIMATION')
+      this.doAnimation = true;
+
     } else {
-      this.classtoggle = false;
+
+      console.log('what does this say DOPNT ANIMATE')
+      this.doAnimation = false;
     }
   }
 

@@ -1,21 +1,11 @@
 <div class="main__container">
-  <app-profile-card></app-profile-card>
-  <!-- <div id="profileCard" #profileCard class="main__container__profile__container">
-    <div [class.main__container__profile__profile__card]="!classtoggle"
-    [class.animatedProfile]='classtoggle'>
-      <div class="main__container__profile__card__profile_image">
-        <img src="../../../assets/images/myfaceProfile3.png" />
-      </div>
-    </div>
-  </div> -->
+  <app-profile-card [animationToggle]="doAnimation"></app-profile-card>
   <div class="content" (scroll)="onScroll($event)">
     <div class="bio-card">
       <h2>I'm Anthony Marques</h2>
       <p>
-        Been in the software development for over 10 years
-        and is a self taugh FrontEnd developer. I do love people and helping
-        others with robust web applications. I have been developing in the
-        fin tech space for about 4 years now consistently.
+        I am a self taugh FrontEnd developer. I do love people and helping others to make robust web
+        applications.
       </p>
     </div>
 

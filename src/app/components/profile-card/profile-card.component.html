@@ -1,10 +1,21 @@
-<div id="profileCard" #profileCard class="main__container__profile__container">
-  <div
-    [class.main__container__profile__profile__card]="!classtoggle"
-    [class.animatedProfile]="classtoggle"
-  >
+<div
+  id="profileCard"
+  #profileCard
+  class="main__container__profile__container"
+  [class]="classtoggle ? 'main__container__profile__container' : 'profile__shrink'"
+>
+  <div class="main__container__profile__profile__card">
     <div class="main__container__profile__card__profile_image">
       <img src="../../../assets/images/myfaceProfile3.png" />
     </div>
+  </div>
+  <div class="socials">
+    <ul>
+      <li>github</li>
+      <li>twitter</li>
+      <li>wordpress</li>
+      <li>instagram</li>
+      <li></li>
+    </ul>
   </div>
 </div>
