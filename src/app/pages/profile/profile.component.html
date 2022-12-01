@@ -1,12 +1,13 @@
 <div class="main__container">
-  <div id="profileCard" #profileCard class="main__container__profile__container">
+  <app-profile-card></app-profile-card>
+  <!-- <div id="profileCard" #profileCard class="main__container__profile__container">
     <div [class.main__container__profile__profile__card]="!classtoggle"
     [class.animatedProfile]='classtoggle'>
       <div class="main__container__profile__card__profile_image">
         <img src="../../../assets/images/myfaceProfile3.png" />
       </div>
     </div>
-  </div>
+  </div> -->
   <div class="content" (scroll)="onScroll($event)">
     <div class="bio-card">
       <h2>I'm Anthony Marques</h2>
