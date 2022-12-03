@@ -28,7 +28,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    ProfileModule
+    // ProfileModule
   ],
   providers: [],
   bootstrap: [AppComponent]

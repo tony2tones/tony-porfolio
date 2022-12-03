@@ -6,6 +6,7 @@ import { MainComponent } from '../main/main.component';
 import { WorkComponent } from '../work/work.component';
 import { ProfileComponent } from '../profile/profile.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ProfileCardComponent } from 'src/app/components/profile-card/profile-card.component';
 
 const routes: Routes = [
   {  path: 'profile', component: ProfileComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
     MainComponent,
     WorkComponent,
     ProfileComponent,
+    ProfileCardComponent,
   ],
   imports: [
     RouterModule.forRoot(routes),
