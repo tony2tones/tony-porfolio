@@ -2,7 +2,9 @@
   id="profileCard"
   #profileCard
   class="main__container__profile__container"
-  [class]="classtoggle ? 'main__container__profile__container' : 'profile__shrink'"
+  [class]="
+    classtoggle ? 'main__container__profile__container' : 'profile__shrink'
+  "
 >
   <div class="main__container__profile__profile__card">
     <div class="main__container__profile__card__profile_image">
@@ -11,12 +13,28 @@
   </div>
   <div class="socials">
     <ul>
-      <li><span class="material-icons">face</span>
-        <i class="fab fa-github"></i> 
-        github</li>
-      <li><img src="assets/images/twitter_logo.png" style="height:3.5rem;">twitter</li>
-      <li><img src="assets/images/WordPress-logotype-wmark.png" style="height:3.5rem;">wordpress</li>
-      <li><img src="assets/images/Instagram_Glyph_Black.png" style="height:3rem;"> instagram</li>
+      <li>
+        <img src="assets/images/githublogo.png" style="height: 3.5rem" />github
+      </li>
+      <li>
+        <img
+          src="assets/images/twitter_logo.png"
+          style="height: 3.5rem"
+        />twitter
+      </li>
+      <li>
+        <img
+          src="assets/images/WordPress-logotype-wmark.png"
+          style="height: 3.5rem"
+        />wordpress
+      </li>
+      <li>
+        <img
+          src="assets/images/Instagram_Glyph_Black.png"
+          style="height: 3rem"
+        />
+        instagram
+      </li>
       <li></li>
     </ul>
   </div>
