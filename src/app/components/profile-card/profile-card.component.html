@@ -11,31 +11,26 @@
       <img src="../../../assets/images/myfaceProfile3.png" />
     </div>
   </div>
-  <div class="socials">
-    <ul>
+  <div class="social">
+    <!-- <div *ngFor="let image of images">
+      <ul>
+        <li><img src="{{ image.imageSrc }}" style="height: 3.5rem" />github</li>
+      </ul>
+    </div> -->
+    <!-- <ng-container *ngFor="let images of techStack$ | async">
+     
+    </ng-container> -->
+    <ul class="socials">
       <li>
-        <img src="assets/images/githublogo.png" style="height: 3.5rem" />github
+        <i class="fa-brands fa-wordpress"></i>
       </li>
       <li>
-        <img
-          src="assets/images/twitter_logo.png"
-          style="height: 3.5rem"
-        />twitter
-      </li>
-      <li>
-        <img
-          src="assets/images/WordPress-logotype-wmark.png"
-          style="height: 3.5rem"
-        />wordpress
-      </li>
-      <li>
-        <img
-          src="assets/images/Instagram_Glyph_Black.png"
-          style="height: 3rem"
-        />
+        <i class="fa-brands fa-instagram"></i>
         instagram
       </li>
-      <li></li>
+      <li>
+        <i class="fa-brands fa-twitter"></i>
+      </li>
     </ul>
   </div>
 </div>
