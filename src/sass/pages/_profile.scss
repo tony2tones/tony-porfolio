@@ -30,8 +30,8 @@
   }
   to {
     flex-direction: column;
-    top:7rem;
-    left:7rem;
+    top: 7rem;
+    left: 7rem;
   }
 }
 .main__container {
@@ -54,68 +54,71 @@
         padding-left: 2rem;
       }
     }
-  }
-}
-
-.main__container__profile__container.profile__shrink {
-  flex-direction: column;
-  & .main__container__profile__card {
-    flex-direction: column;
-    margin-top: 10rem;
-    &__profile_image {
-      background-color: rgb(105, 210, 223);
-      border-radius: 10rem;
-      position: relative;
-      height: 18rem;
-      width: 20rem;
-      animation-name: profileCardShrink;
-      animation-duration: 3s;
-      animation-iteration-count: 1;
-      & > img {
-        animation: profileImgShrink 4s;
-        position: absolute;
-        width: 16rem;
-        padding-left: 2rem;
+    &__socials {
+      & ul.socials {
+        position: relative;
+        display: flex;
+        top: 14rem;
+        left: 8rem;
+        list-style: none;
       }
-    }
-  }
-  .socials {
-    position: absolute;
-    color: aliceblue;
-    & ul {
-      position: relative;
-      display: flex;
-      animation-name: profileSocials 4s;
-      flex-direction: column;
-      top: 7rem;
-      left: 7rem;
-      list-style: none;
       & li {
-        padding-right: 2rem;
-        & img {
-          max-height: 3rem;
-          // height: 3.5rem;
-
+        padding-right: 5rem;
+        & .fa-brands {
+          scale: 6;
+          color: aliceblue;
         }
       }
     }
   }
-}
 
-  .socials {
-    position: absolute;
-    color: aliceblue;
-    & ul {
-      position: relative;
-      display: flex;
-      top: 14rem;
-      left: 8rem;
-      list-style: none;
-      & li {
-        padding-right: 2rem;
+  .main__container__profile__container.profile__shrink {
+    flex-direction: column;
+    & .main__container__profile__card {
+      flex-direction: column;
+      margin-top: 10rem;
+      &__profile_image {
+        background-color: rgb(105, 210, 223);
+        border-radius: 10rem;
+        position: relative;
+        height: 18rem;
+        width: 20rem;
+        animation-name: profileCardShrink;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        & > img {
+          animation: profileImgShrink 4s;
+          position: absolute;
+          width: 16rem;
+          padding-left: 2rem;
+        }
+      }
+    }
+    .social {
+      position: absolute;
+
+      .socials {
+        & li {
+          position: relative;
+          flex-direction: column;
+          // animation-name: profileSocials 4s;
+          top: 7rem;
+          left: 7rem;
+        }
+        // color: aliceblue;
+        // & li {
+        // list-style: none;
+        // & li {
+        // padding-right: 2rem;
+        // & .fa-brands {
+        // height: 3rem;
+        // }
+        // }
+        // }
       }
     }
   }
+}
 
 .content {
   display: block;
