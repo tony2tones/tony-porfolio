@@ -30,8 +30,8 @@
   }
   to {
     flex-direction: column;
-    top:7rem;
-    left:7rem;
+    top: 7rem;
+    left: 7rem;
   }
 }
 .main__container {
@@ -54,60 +54,63 @@
         padding-left: 2rem;
       }
     }
+    &__socials {
+      & ul.socials {
+        position: relative;
+        display: flex;
+        top: 14rem;
+        left: 8rem;
+        list-style: none;
+        & li {
+          padding-right: 5rem;
+          & .fa-brands {
+            scale: 6;
+            color: #fff;
+          }
+        }
+      }
+    }
   }
 }
 
-.main__container__profile__container.profile__shrink {
-  flex-direction: column;
-  & .main__container__profile__card {
+  .main__container__profile__container.profile__shrink {
     flex-direction: column;
-    margin-top: 10rem;
-    &__profile_image {
-      background-color: rgb(105, 210, 223);
-      border-radius: 10rem;
-      position: relative;
-      height: 18rem;
-      width: 20rem;
-      animation-name: profileCardShrink;
-      animation-duration: 3s;
-      animation-iteration-count: 1;
-      & > img {
-        animation: profileImgShrink 4s;
-        position: absolute;
-        width: 16rem;
-        padding-left: 2rem;
-      }
-    }
-  }
-  .socials {
-    position: absolute;
-    color: aliceblue;
-    & ul {
-      position: relative;
-      display: flex;
-      animation-name: profileSocials 4s;
+    & .main__container__profile__card {
       flex-direction: column;
-      top: 7rem;
-      left: 7rem;
-      list-style: none;
-      & li {
-        padding-right: 2rem;
+      margin-top: 10rem;
+      &__profile_image {
+        background-color: rgb(105, 210, 223);
+        border-radius: 10rem;
+        position: relative;
+        height: 18rem;
+        width: 20rem;
+        animation-name: profileCardShrink;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        & > img {
+          animation: profileImgShrink 4s;
+          position: absolute;
+          width: 16rem;
+          padding-left: 2rem;
+        }
       }
-    }
-  }
-}
-
-  .socials {
-    position: absolute;
-    color: aliceblue;
-    & ul {
-      position: relative;
-      display: flex;
-      top: 14rem;
-      left: 8rem;
-      list-style: none;
-      & li {
-        padding-right: 2rem;
+      &__socials {
+        & ul.socials {
+          position: relative;
+          animation: profileSocials 4s forwards;
+          list-style: none;
+          & li {
+            flex-direction: column;
+            padding-right: 5rem;
+            top: 14rem;
+            left: 8rem;
+            & i.fa-brands {
+              scale: 3;
+              padding: 1rem;
+              color: rgb(127, 184, 235);
+            }
+          }
+        }
       }
     }
   }

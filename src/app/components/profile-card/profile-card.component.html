@@ -2,20 +2,35 @@
   id="profileCard"
   #profileCard
   class="main__container__profile__container"
-  [class]="classtoggle ? 'main__container__profile__container' : 'profile__shrink'"
+  [class]="
+    classtoggle ? 'main__container__profile__container' : 'profile__shrink'
+  "
 >
   <div class="main__container__profile__profile__card">
     <div class="main__container__profile__card__profile_image">
       <img src="../../../assets/images/myfaceProfile3.png" />
     </div>
   </div>
-  <div class="socials">
-    <ul>
-      <li>github</li>
-      <li>twitter</li>
-      <li>wordpress</li>
-      <li>instagram</li>
-      <li></li>
+  <div class="main__container__profile__card__socials">
+    <ul class="socials">
+      <li>
+        <i class="fa-brands fa-wordpress"></i>
+        wordpress
+      </li>
+      <li>
+        <i class="fa-brands fa-instagram"></i>
+        instagram
+      </li>
+      <li>
+        <i class="fa-brands fa-twitter"></i>
+        twitter
+      </li>
+      <li>
+        <i class="fa-brands fa-stack-overflow"></i>
+        stackoverflow
+      </li>
+
+
     </ul>
   </div>
 </div>
