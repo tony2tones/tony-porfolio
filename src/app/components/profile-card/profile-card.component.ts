@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
-import { Unsub } from '../services/unsub.services';
 
 export interface Images {
   id: number,
@@ -12,14 +11,13 @@ export interface Images {
   templateUrl: './profile-card.component.html',
   styleUrls: ['./profile-card.component.scss']
 })
-export class ProfileCardComponent extends Unsub implements OnInit, OnChanges {
+export class ProfileCardComponent implements OnInit, OnChanges {
   @Input() animationToggle: boolean = false;
  
   classtoggle:any = false;
 
   // techStack$:Observable<Images[]> = of(this.images);
   constructor() {
-    super()
    }
 
   ngOnInit(): void {
