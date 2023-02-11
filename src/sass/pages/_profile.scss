@@ -65,7 +65,7 @@
           padding-right: 5rem;
           & .fa-brands {
             scale: 6;
-            color: rgb(225, 175, 48);
+            color: #fff;
           }
         }
       }
@@ -106,6 +106,7 @@
             left: 8rem;
             & i.fa-brands {
               scale: 3;
+              padding: 1rem;
               color: rgb(127, 184, 235);
             }
           }
