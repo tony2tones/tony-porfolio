@@ -28,6 +28,7 @@
 }
 
 .project-list {
+  margin-left: 6rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -42,6 +43,16 @@
   max-height: 230px;
   border: 2px solid white;
 }
+
+.image-adjustment {
+  height: 250px;
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+
 
 .project img {
   max-height: 230px;
