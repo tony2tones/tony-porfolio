@@ -7,6 +7,7 @@ import { WorkComponent } from '../work/work.component';
 import { ProfileComponent } from '../profile/profile.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ProfileCardComponent } from 'src/app/components/profile-card/profile-card.component';
+import { SvgTailwindComponent } from 'src/app/components/svgs/svg-tailwind/svg-tailwind.component';
 
 const routes: Routes = [
   {  path: 'profile', component: ProfileComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
     WorkComponent,
     ProfileComponent,
     ProfileCardComponent,
+    SvgTailwindComponent,
   ],
   imports: [
     RouterModule.forRoot(routes),
