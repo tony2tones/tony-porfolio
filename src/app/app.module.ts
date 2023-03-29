@@ -11,6 +11,7 @@ import { WorkComponent } from './pages/work/work.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { ProfileModule } from './pages/profile/profile.module';
 import { ScrollDirective } from './directive/scroll-styles.directive';
+import { SvgTailwindComponent } from './components/svgs/svg-tailwind/svg-tailwind.component';
 
 
 const routes: Routes = [

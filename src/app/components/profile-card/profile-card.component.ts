@@ -30,10 +30,6 @@ export class ProfileCardComponent implements OnInit, OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     this.classtoggle = !this.classtoggle;
-    // if(this.animationToggle) {
-      // this.classtoggle = changes.currentValue;
-      // console.log('is this being triggered', changes);
-      // console.log('is this being classToggy', this.classtoggle);
 
     }
 

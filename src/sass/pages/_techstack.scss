@@ -29,17 +29,46 @@
 
 .project-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
+  grid-gap: 1em;
+  
+}
+
+.project-list img {
+  background-size: cover;
+  align-items: center;
 }
 
 .project {
   margin-top: 13rem;
   margin-right: 5rem;
-  border: 2px solid white;
+  max-height: 230px;
+}
+
+.project.svg {
+  padding-top: 4rem;
+  height: 250px;
+  width: 250px;
+}
+
+.image-adjustment > img {
+  min-height: 194px;
+  min-width: 233px;
+}
+
+.container-techstack {
+  height: 100vw;
 }
 
 .project img {
-  max-height: 230px;
+  max-height: 280px;
   max-width: 400px;
+}
+
+
+@media (max-width: 1300px){
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
