@@ -24,14 +24,31 @@
 
 @keyframes profileSocials {
   from {
-    flex-direction: row;
+    // flex-direction: row;
+    // top: 14rem;
+    // left: 8rem;
+    // transform: translateX(0);
+    // transform: rotate(0deg);
+  }
+  to {
+    // flex-direction: column;
+    top: 20rem;
+    left: -2rem;
+    // transform: rotate(100%);
+    // transform: rotate(90deg);
+
+  }
+}
+
+@keyframes socialIcons {
+  from {
     top: 14rem;
     left: 8rem;
   }
   to {
-    flex-direction: column;
-    top: 7rem;
-    left: 7rem;
+    top: 20rem;
+    left: -2rem;
+
   }
 }
 .main__container {
@@ -97,7 +114,7 @@
       &__socials {
         & ul.socials {
           position: relative;
-          animation: profileSocials 4s forwards;
+          animation: profileSocials ease-in 3s forwards ;
           list-style: none;
           & li {
             flex-direction: column;
@@ -105,6 +122,8 @@
             padding-top:2rem;
             top: 14rem;
             left: 8rem;
+            // animation: name duration timing-function delay iteration-count direction fill-mode;
+            animation: socialIcons 5s forwards;
             & i.fa-brands {
               scale: 3;
               padding: 1rem;

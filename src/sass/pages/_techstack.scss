@@ -27,7 +27,7 @@
   
 }
 
-.project-list {
+.tech-stack-list {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -35,18 +35,18 @@
   
 }
 
-.project-list img {
+.tech-stack-list img {
   background-size: cover;
   align-items: center;
 }
 
-.project {
+.tech-stack {
   margin-top: 13rem;
   margin-right: 5rem;
   max-height: 230px;
 }
 
-.project.svg {
+.tech-stack.svg {
   padding-top: 4rem;
   height: 250px;
   width: 250px;
@@ -61,14 +61,14 @@
   height: 100vw;
 }
 
-.project img {
+.tech-stack img {
   max-height: 280px;
   max-width: 400px;
 }
 
 
 @media (max-width: 1300px){
-  .project-list {
+  .tech-stack-list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
