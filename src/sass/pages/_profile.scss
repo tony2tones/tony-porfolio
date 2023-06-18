@@ -36,6 +36,7 @@
 }
 .main__container {
   display: flex;
+  flex-direction: column;
   &__profile__container {
     padding-top: 3rem;
   }
