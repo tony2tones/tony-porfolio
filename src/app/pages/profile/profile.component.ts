@@ -14,9 +14,13 @@ export class ProfileComponent implements OnInit {
   constructor(private renderer: Renderer2, private viewporter: ViewportScroller) { }
 
   @HostListener('click', ['$event']) 
-  scrollToAnchor($event:any) {
-    console.log('What is in here?', $event)
-    const sectionElement = document.getElementById('twoTESTING');
+  scrollToAnchor(sectionId:string) {
+    console.log('What is in here?', sectionId)
+    const sectionElement = document.getElementById(sectionId);
+
+    if(sectionId === 'home') {
+      sectionElement?.scrollTop;
+    }
 
     if (sectionElement) {
       sectionElement.scrollIntoView({ behavior: 'smooth' });

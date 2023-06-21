@@ -13,9 +13,9 @@ export class HeadnavComponent {
   @Output() messageBus = new EventEmitter<string>();
   constructor(private router: Router) { }
 
-  goDown() {
-    console.log('is this happening? ')
-    this.messageBus.emit('twoTESTING');
+  goDown(sectionId:string) {
+    console.log('is From the header ',sectionId)
+    this.messageBus.emit(sectionId);
   }
 
 
