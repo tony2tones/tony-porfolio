@@ -13,19 +13,25 @@ export class ProfileComponent implements OnInit {
   elementRef!: ElementRef;
   constructor(private renderer: Renderer2, private viewporter: ViewportScroller) { }
 
-  @HostListener('document:scroll', ['$event']) 
-  onScroll($event: any) {
+  @HostListener('click', ['$event']) 
+  scrollToAnchor($event:any) {
+    console.log('What is in here?', $event)
+    const sectionElement = document.getElementById('twoTESTING');
 
-    if( $event.target.scrollTop >= 110 ) {
-      console.log('DO ANIMATION')
-      this.doAnimation = true;
-
-    } else {
-
-      console.log('what does this say DOPNT ANIMATE')
-      this.doAnimation = false;
+    if (sectionElement) {
+      sectionElement.scrollIntoView({ behavior: 'smooth' });
     }
   }
+
+  // oDown() {
+  //   console.log('say somethinh resume')
+  //   const sectionElement = document.getElementById('resume');
+    
+  //   if (sectionElement) {
+  //     console.log('say somethinh', sectionElement)
+  //     this.renderer.setProperty(document.body, 'scrollTop', sectionElement.offsetTop);
+  //   }
+  // }
 
   // @HostListener("window:scroll", [])
   // onWindowScroll() {

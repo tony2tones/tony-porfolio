@@ -1,1 +1,8 @@
 @import "/src/sass/pages/profile";
+
+.rapper.flow.main__container {
+  height: 100vh; /* Adjust the height as needed */
+  overflow: auto; /* or overflow: scroll; */
+
+  }
+

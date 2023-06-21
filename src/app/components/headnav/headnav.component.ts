@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
+
 import {  Router } from '@angular/router';
 
 @Component({
@@ -8,16 +10,14 @@ import {  Router } from '@angular/router';
 })
 export class HeadnavComponent {
   title = 'tony-portfolio';
-
+  @Output() messageBus = new EventEmitter<string>();
   constructor(private router: Router) { }
 
-  profile() {
-    this.router.navigate(['/profile']);
+  goDown() {
+    console.log('is this happening? ')
+    this.messageBus.emit('twoTESTING');
   }
 
-  myScroll() {
-    console.log('SOMETHING HAPPENED');
-  }
 
 
 }

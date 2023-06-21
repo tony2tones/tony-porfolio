@@ -1,8 +1,10 @@
 <div class="wrapper flow main__container">
-  <app-headnav></app-headnav>
+  <app-headnav (messageBus)="scrollToAnchor($event)"></app-headnav>
   <!-- <app-profile-card [animationToggle]="doAnimation"></app-profile-card> -->
-  <div class="content" (scroll)="onScroll($event)">
+  <div class="content">
+    <!-- <div class="content" (scroll)="onScroll($event)"> -->
     <div class="bio-card">
+      
       <h2>I'm Anthony Marques</h2>
       <p>
         I am a self taugh FrontEnd developer. I do love people and helping others to make robust web
@@ -13,10 +15,12 @@
     <section class="landing-background">
       <router-outlet></router-outlet>
     </section>
-    <section class="two">
+    <div id="twoTESTING">
+    <section >
       <app-techstack></app-techstack>
     </section>
-    <section class="resume">
+  </div>
+    <section id="resume">
       <app-work></app-work>
     </section>
   </div>

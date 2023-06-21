@@ -11,6 +11,7 @@ html {
     // defines what 1rem is 
     font-size: 62.5%;
     font-family: "Roboto", sans-serif;
+    overflow: hidden;
 }
 body {
     margin:0;
@@ -20,14 +21,6 @@ body {
     margin:0;
 }
 
-.wrapper {
-    width: max(100% -3rem, 65ch);
-    margin-inline: auto;
-}
-
-.flow > * + * {
-    margin-top: 1rem;
-}
 // SCROLLBAR STYLES
 ::-webkit-scrollbar {
     background-color: transparent;
