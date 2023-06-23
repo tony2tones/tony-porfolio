@@ -1,9 +1,12 @@
 <nav class="navBar">
-    <ul>
-      <li [routerLink]='["/"]' [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active"><a>Home</a>
-      </li>
-      <li [routerLink]='["work"]' routerLinkActive="active"><a>Work</a></li>
-      <li [routerLink]='["techstack"]' routerLinkActive="active" ><a>Tech stack</a></li>
-      <li [routerLink]='["about"]' routerLinkActive="active" ><a>About</a></li>
-    </ul>
-  </nav>
+  <ul>
+    <li><a (click)="goDown('home')">Home</a>
+    </li>
+    <li><a (click)="goDown('tech-stack')">Tech stack</a></li>
+    <li><a (click)="goDown('resume')">Resume</a></li>
+    <li><a (click)="goDown('About')">About</a></li>
+  </ul>
+  <!-- <button (click)="scrollToSection('about')">About</button>
+<button (click)="scrollToSection('projects')">Projects</button>
+<button (click)="scrollToSection('contact')">Contact</button> -->
+</nav>

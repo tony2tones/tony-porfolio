@@ -1,22 +1,36 @@
 
 .navBar {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  height: 6rem;
   top: 20px;
+  margin: auto;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
 }
 .navBar ul {
   display: flex;
+  gap: 3rem;
+  justify-content: center;
 }
 .navBar ul li {
   list-style-type: none;
+  text-align: center;
   display: inline-block;
   transition: 0.7s all;
-  padding: 2rem;
+  padding: 1rem;
+  width: 15rem;
   font-size: medium;
 }
 .navBar ul li:hover {
   background-color: #088;
   color:black;
   cursor: pointer;
+  border-radius: 3.5rem;
 }
 .navBar ul li a {
   text-decoration: none;
