@@ -19,7 +19,7 @@ export class ProfileComponent implements OnInit {
     const sectionElement = document.getElementById(sectionId);
 
     if(sectionId === 'home') {
-      sectionElement?.scrollTop;
+      sectionElement?.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     if (sectionElement) {
