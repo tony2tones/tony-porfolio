@@ -35,40 +35,36 @@
   
 }
 
-.project-list img {
-  background-size: cover;
-  align-items: center;
-}
-
 .project {
-  margin-top: 13rem;
-  margin-right: 5rem;
+    margin-right: 5rem;
   max-height: 230px;
 }
 
 .project.svg {
+  max-height: 194px;
   padding-top: 4rem;
   height: 250px;
   width: 250px;
 }
 
 .image-adjustment > img {
-  min-height: 194px;
-  min-width: 233px;
+  max-height: 194px;
 }
 
 .container-techstack {
   height: 100vw;
+  padding-top: 10rem;
 }
 
-.project img {
-  max-height: 280px;
-  max-width: 400px;
+.project > img {
+  max-height: 150px;
 }
 
 
 @media (max-width: 1300px){
-  .project-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  // .project-list {
+    .project img {
+  // max-height: 280px;
+}
+  // }
 }

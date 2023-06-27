@@ -8,6 +8,7 @@ import { ProfileComponent } from '../profile/profile.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ProfileCardComponent } from 'src/app/components/profile-card/profile-card.component';
 import { SvgTailwindComponent } from 'src/app/components/svgs/svg-tailwind/svg-tailwind.component';
+import { ResumeComponent } from '../resume/resume.component';
 
 const routes: Routes = [
   {  path: 'profile', component: ProfileComponent },
@@ -21,6 +22,7 @@ const routes: Routes = [
     HeadnavComponent,
     MainComponent,
     WorkComponent,
+    ResumeComponent,
     ProfileComponent,
     ProfileCardComponent,
     SvgTailwindComponent,
